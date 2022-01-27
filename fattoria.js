@@ -3,10 +3,15 @@ import Animale from "./animale.js"
 export default class Fattoria {
     constructor()
     {
-        document.getElementById("btGa").addEventListener('click', this.cGallo);
+        if (document.getElementById("btGa")!=null){
+            document.getElementById("btGa").addEventListener('click', this.cGallo);
+        }
+        if (document.getElementById("btMa")!=null){
         document.getElementById('btMa').addEventListener('click', this.cMaiale);
+        }
+        if (document.getElementById("btMu")!=null){
         document.getElementById('btMu').addEventListener('click', this.cMucca);
-
+        }
     }
 
     cGallo() {
